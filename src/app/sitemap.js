@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 
 export default async function sitemap() {
-  const baseUrl = "https://www.currencystrengthsmeters.com";
+  const baseUrl = "https://www.sipcalculator.tech";
 
   // --- Read all blog slugs dynamically ---
   const blogDir = path.join(process.cwd(), "content/blog");

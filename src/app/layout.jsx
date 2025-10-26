@@ -12,30 +12,30 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata = {
   title:
-    "Currency Strength Meter | Live Forex Strength Tool (2025)",
+    "SIP Calculator | Best Calculator Online for Mutual Funds",
   description:
-    "Live Currency Strength Meter — real-time forex strength tool showing the strongest and weakest currencies. Track USD, EUR, GBP, JPY, and more live.",
+    "A SIP calculator is a tool to calculate returns for your SIP investments in mutual funds that helps individuals to plan their investments effectively. This will help us to estimate the future value of your SIP investments based on various parameters like monthly investment amount, expected rate of return, and investment duration.",
   keywords: keywords,
   openGraph: {
-    title: "Currency Strength Meter | Live Forex Strength Tool (2025)",
+    title: "SIP Calculator | Best Calculator Online for Mutual Funds",
     description:
-      "Analyze live forex trends and currency strengths to find the strongest and weakest currencies instantly.",
-    url: "https://www.currencystrengthsmeters.com/",
+      "A SIP calculator is a tool to calculate returns for your SIP investments in mutual funds that helps individuals to plan their investments effectively.",
+    url: "https://www.sipcalculator.tech/",
     images: [
       {
-        url: "https://www.currencystrengthsmeters.com/og-image.png",
+        url: "https://www.sipcalculator.tech/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Currency Strength Meter",
+        alt: "SIP Calculator | Best Calculator Online for Mutual Funds",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Currency Strength Meter | Live Forex Strength Tool (2025)",
+    title: "SIP Calculator | Best Calculator Online for Mutual Funds",
     description:
-      "Track the strongest and weakest forex currencies in real time with our live currency strength tool.",
-    images: ["https://www.currencystrengthsmeters.com/og-image.png"],
+      "A SIP calculator is a tool to calculate returns for your SIP investments in mutual funds that helps individuals to plan their investments effectively.",
+    images: ["https://www.sipcalculator.tech/og-image.webp"],
   },
   icons: { icon: "/favicon.ico" },
 };
