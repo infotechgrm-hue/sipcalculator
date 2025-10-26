@@ -180,7 +180,7 @@ export default function SIPCalculator() {
           <SliderInput
             label="Expected return rate (p.a)"
             min={1}
-            max={100}
+            max={50}
             step={0.1}
             value={data.annualRate}
             onChange={(v) => handleChange("annualRate", v)}
