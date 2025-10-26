@@ -5,7 +5,7 @@ date: "2025-10-26T09:49:12.152Z"
 excerpt: "Introduction: The Smart Way to Start Investing If you’ve ever wondered how people grow their money steadily without constantly watching the stock market, the answer often lies in one simple tool — the Systematic Investment Plan (SIP). A SIP allows you to invest a fixed amount regularly in a mutual..."
 tags: ["sip calculator", "mutual funds", "financial planning", "investing", "wealth creation"]
 keywords: ["what is sip", "sip investment basics", "how sip works", "mutual fund sip", "sip calculator guide", "beginner investing tips", "monthly sip planning"]
-ogImage: "https://www.sipcalculator.tech/og-cache/understanding-sip-investment-basics-a-beginner-s-guide-to-smart-investing.jpg"
+ogImage: "https://www.sipcalculator.tech/og-cache/understanding-sip-investment-basics-a-beginner-s-guide-to-smart-investing.webp"
 ---
 **Introduction: The Smart Way to Start Investing**
 
