@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import Header from "@/components/Header";
-import RedirectButton from "@/components/RedirectButton";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Blog | SIP Calculator",
@@ -198,11 +198,7 @@ export default async function BlogPage({ searchParams }) {
       </div>
 
       {/* Footer */}
-      <footer className="mt-20 border-t border-gray-200 dark:border-gray-800 py-10 text-center text-gray-500 text-sm">
-        <div className="max-w-4xl mx-auto">
-          <p>© {new Date().getFullYear()} SIP Calculator. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

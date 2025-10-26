@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import AddSlot from "@/components/AddSlot";
-import RedirectButton from "@/components/RedirectButton";
+import Footer from "@/components/Footer";
 
 // ✅ SEO Metadata
 export const metadata = {
@@ -170,12 +170,7 @@ export default function ContactPage() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-20 border-t border-gray-200 dark:border-gray-800 py-10 text-center text-gray-500 text-sm">
-        <div className="max-w-4xl mx-auto">
-          <p>© {new Date().getFullYear()} SIP Calculator. All rights reserved.</p>
-          <AddSlot />
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

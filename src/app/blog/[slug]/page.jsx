@@ -19,6 +19,7 @@ import TableOfContents from "@/components/TableOfContents";
 import RedirectButton from "@/components/RedirectButton";
 import RelatedPosts from "@/components/RelatedPosts";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const blogDir = path.join(process.cwd(), "content/blog");
 
@@ -256,15 +257,7 @@ export default async function BlogDetail({ params }) {
           </div>
 
           <hr className="my-12 border-gray-200 dark:border-gray-700" />
-          <footer className="text-center">
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
-              © {new Date().getFullYear()}{" "}
-              <strong>
-                <Link href="https://www.sipcalculator.tech">SIP Calculator</Link>
-              </strong>{" "}
-              – Smarter Investments. Simpler Planning.
-            </p>
-          </footer>
+          <Footer />
         </div>
 
         {/* Right: Sidebar */}
