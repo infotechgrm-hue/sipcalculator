@@ -60,7 +60,7 @@ A **SIP calculator** helps you estimate how your investment will grow over time.
 - Expected rate of return  
 
 By adjusting these values, you can visualize your **future corpus** and plan smarter.  
-Try the free online SIP calculator at [www.sipcalculator.in](https://www.sipcalculator.in) to forecast your returns instantly.
+Try the free online SIP calculator at [www.sipcalculator.tech](https://www.sipcalculator.tech) to forecast your returns instantly.
 
 ---
 
@@ -113,7 +113,7 @@ For most investors, yes. SIPs reduce risk by spreading purchases over time rathe
 
 A SIP isn’t just an investment plan — it’s a **commitment to your financial future**. With consistency, patience, and smart fund selection, even small SIPs can turn into significant wealth over time.
 
-Start today with [SIP Calculator](https://www.sipcalculator.in) and see how your money can grow effortlessly.
+Start today with [SIP Calculator](https://www.sipcalculator.tech) and see how your money can grow effortlessly.
 `,
   },
 
@@ -222,7 +222,7 @@ A **SIP calculator** helps simulate both approaches. You can compare:
 
 This allows you to see how small monthly SIPs can match or even outperform lump sum returns with reduced risk.
 
-Try it yourself on [www.sipcalculator.in](https://www.sipcalculator.in) — adjust values and see how consistency outperforms timing.
+Try it yourself on [www.sipcalculator.tech](https://www.sipcalculator.tech) — adjust values and see how consistency outperforms timing.
 
 ---
 

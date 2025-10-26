@@ -94,7 +94,7 @@ A **SIP calculator** helps simulate both approaches. You can compare:
 
 This allows you to see how small monthly SIPs can match or even outperform lump sum returns with reduced risk.
 
-Try it yourself on [www.sipcalculator.in](https://www.sipcalculator.in) — adjust values and see how consistency outperforms timing.
+Try it yourself on [www.sipcalculator.tech](https://www.sipcalculator.tech) — adjust values and see how consistency outperforms timing.
 
 ---
 

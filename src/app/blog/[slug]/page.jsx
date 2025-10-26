@@ -95,7 +95,7 @@ export async function generateMetadata({ params }) {
         {
           url:
             data.ogImage ||
-            "https://www.sipcalculator.in/og-cache/sip-growth-chart.jpg",
+            "https://www.sipcalculator.tech/og-cache/sip-growth-chart.jpg",
           width: 1200,
           height: 630,
           alt: data.title,
@@ -127,8 +127,8 @@ export default async function BlogDetail({ params }) {
     ogImage && ogImage.trim() !== ""
       ? ogImage.startsWith("http")
         ? ogImage
-        : `https://www.sipcalculator.in${ogImage}`
-      : "https://www.sipcalculator.in/og-cache/sip-growth-chart.jpg";
+        : `https://www.sipcalculator.tech${ogImage}`
+      : "https://www.sipcalculator.tech/og-cache/sip-growth-chart.jpg";
 
   // ✅ Related Posts
   const allFiles = fs.readdirSync(blogDir);
@@ -147,7 +147,7 @@ export default async function BlogDetail({ params }) {
         title: data.title,
         ogImage:
           data.ogImage ||
-          "https://www.sipcalculator.in/og-cache/sip-growth-chart.jpg",
+          "https://www.sipcalculator.tech/og-cache/sip-growth-chart.jpg",
         tags: data.tags || [],
       };
     })
@@ -260,7 +260,7 @@ export default async function BlogDetail({ params }) {
             <p className="text-gray-600 dark:text-gray-300 text-sm">
               © {new Date().getFullYear()}{" "}
               <strong>
-                <Link href="https://www.sipcalculator.in">SIP Calculator</Link>
+                <Link href="https://www.sipcalculator.tech">SIP Calculator</Link>
               </strong>{" "}
               – Smarter Investments. Simpler Planning.
             </p>
