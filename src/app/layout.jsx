@@ -47,17 +47,17 @@ export default function RootLayout({ children }) {
         {children}
         <Analytics />
 
-        {/* ✅ Google Analytics */}
+        {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-P81G6N8EHJ"
-          strategy="afterInteractive"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-J4QTK4426X"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-P81G6N8EHJ');
+            gtag('config', 'G-J4QTK4426X');
           `}
         </Script>
 
@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
         {/* ✅ GTM noscript fallback */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-M3ZWWFT8"
+            src="https://www.googletagmanager.com/ns.html?id=G-J4QTK4426X"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
