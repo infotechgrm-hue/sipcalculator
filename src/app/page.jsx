@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
 
       {/* Main SIP Calculator */}
-      <div className="max-w-[1400px] w-full mx-auto px-6 py-8">
+      <div className="max-w-7xl w-full mx-auto px-6 py-8">
         <SIPCalculator />
       </div>
 
