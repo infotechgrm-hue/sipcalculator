@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import SIPCalculator from "@/components/SIP/SIPCalculator";
+import SIPCalculatorWithSidebar from "@/components/SIPCalculatorWithSidebar";
 import EnhancedSection from "@/components/EnhancedSection";
 import Footer from "@/components/Footer";
 import Faqs from "@/components/Faqs";
@@ -11,14 +11,14 @@ export default function Home() {
       {/* Header */}
       <Header />
 
-      {/* Main SIP Calculator */}
-      <div className="max-w-7xl w-full mx-auto px-6 py-8">
-        <SIPCalculator />
+      {/* Main SIP Calculator Layout */}
+      <div className="max-w-7xl w-full mx-auto py-8">
+        {/* Use the new layout component here */}
+        <SIPCalculatorWithSidebar />
       </div>
 
       {/* Ad below meter */}
       <AddSlot slot="1234567890" />
-
       {/* ======================== SEO CONTENT SECTIONS ======================== */}
       <section className="max-w-6xl mx-auto px-4 py-12 text-center md:text-left">
         <h1 className="text-3xl md:text-4xl font-extrabold text-emerald-600 mb-4">
@@ -71,7 +71,6 @@ export default function Home() {
         ]}
         img="/images/sip-calculator.webp"
       />
-
       {/* 1. How SIP Compounding Works */}
       <EnhancedSection
         title="How Does SIP Compounding Work?"
@@ -99,9 +98,7 @@ export default function Home() {
         years={10}
         // img="/images/how-sip-works.webp"
       />
-
       <AddSlot slot="2234567891" />
-
       {/* 2. Investment Breakdown (Pie Chart) */}
       <EnhancedSection
         title="Investment Breakdown"
@@ -117,9 +114,7 @@ export default function Home() {
         }}
         // img="/images/breakdown.webp"
       />
-
       <AddSlot slot="2234567892" />
-
       {/* 5. SIP Returns Formula */}
       <EnhancedSection
         title="How Are SIP Returns Calculated?"
@@ -136,9 +131,7 @@ export default function Home() {
         }}
         // img="/images/formula-sip.webp"
       />
-
       <AddSlot slot="2234567895" />
-
       {/* 6. Benefits of Using SIP Calculator */}
       <EnhancedSection
         title="Benefits of Using an SIP Calculator"
@@ -150,9 +143,7 @@ export default function Home() {
         ]}
         // img="/images/advantages-sip.webp"
       />
-
       <AddSlot slot="2234567896" />
-
       {/* 7. SIP vs Lump Sum Investment */}
       <EnhancedSection
         title="SIP vs Lump Sum Investment"
@@ -164,9 +155,7 @@ export default function Home() {
         ]}
         // img="/images/sip-vs-lumpsum.webp"
       />
-
       <AddSlot slot="2234567897" />
-
       {/* 8. Tips to Maximize SIP Returns */}
       <EnhancedSection
         title="Tips to Maximize SIP Returns"
@@ -178,9 +167,7 @@ export default function Home() {
         ]}
         // img="/images/tips-sip.webp"
       />
-
       <AddSlot slot="2234567898" />
-
       {/* 9. Start SIP Journey */}
       <EnhancedSection
         title="Start Your SIP Journey Today"
@@ -192,7 +179,6 @@ export default function Home() {
         ]}
         // img="/images/start-sip.webp"
       />
-
       {/* Footer */}
       <Faqs />
       <Footer />
