@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import SIPCalculator from "@/components/SIP/SIPCalculator";
+import LumpsumCalculator from "@/components/SIP/LumpsumCalculator";
 import PopularCalculators from "@/components/PopularCalculators";
 import EnhancedSection from "@/components/EnhancedSection";
 import Footer from "@/components/Footer";
@@ -17,7 +17,7 @@ export default function Home() {
         {/* Use the new layout component here */}
         <div className="flex flex-col lg:flex-row lg:items-start ">
           <div className="flex-1 w-full order-1">
-            <SIPCalculator />
+            <LumpsumCalculator />
           </div>
           <div className="w-full lg:w-1/5 order-2">
             <PopularCalculators />
