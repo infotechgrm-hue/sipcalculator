@@ -49,6 +49,45 @@ const faqData = {
         "A financial calculator helps estimate investment returns, EMIs, or savings growth using mathematical formulas. It provides clarity and aids better financial planning.",
     },
   ],
+  mutualfund: [
+    {
+      question: "What is a Mutual Fund Return Calculator and how does it work?",
+      answer:
+        "A Mutual Fund Return Calculator is an online tool that helps investors estimate the potential returns on their mutual fund investments. By entering your invested amount, time horizon, and expected rate of return, the calculator projects how your wealth may grow over time through compounding. It helps you plan your investments more accurately and make informed financial decisions.",
+    },
+    {
+      question:
+        "Can I use this calculator for both SIP and Lumpsum investments?",
+      answer:
+        "Yes. The Mutual Fund Return Calculator can be used for both SIP and Lumpsum investments. You can calculate future value based on either a one-time investment or recurring monthly contributions. This helps you compare which mode suits your financial goals better.",
+    },
+    {
+      question:
+        "Are the results from the Mutual Fund Return Calculator accurate?",
+      answer:
+        "The calculator provides estimates based on the figures you input — such as expected return rate and duration. Actual returns may vary due to market volatility, fund performance, and expenses. However, it serves as a realistic projection for planning your investment strategy effectively.",
+    },
+    {
+      question: "What factors influence mutual fund returns?",
+      answer:
+        "Several factors impact mutual fund returns, including market performance, type of fund (equity, debt, hybrid), fund manager expertise, expense ratio, and your investment tenure. Generally, long-term investments in equity funds tend to yield higher returns due to compounding and market growth.",
+    },
+    {
+      question: "Is it safe to invest in mutual funds for long-term goals?",
+      answer:
+        "Mutual funds are regulated by SEBI and considered safe when invested through registered Asset Management Companies. Although market risks exist, diversified portfolios and long-term holding periods can help reduce volatility and deliver strong, inflation-adjusted returns.",
+    },
+    {
+      question: "How often should I review my mutual fund investments?",
+      answer:
+        "It’s advisable to review your mutual fund portfolio at least once or twice a year. Regular reviews help ensure your investments align with your goals, risk tolerance, and market conditions. If needed, you can rebalance or switch funds to maintain performance and diversification.",
+    },
+    {
+      question: "Can this calculator help me choose the best mutual fund?",
+      answer:
+        "While the Mutual Fund Return Calculator doesn’t recommend specific funds, it helps you compare different return scenarios. You can input different expected rates of return based on fund types — equity, debt, or hybrid — to understand how each may perform over your chosen duration.",
+    },
+  ],
 };
 
 export default function Faqs({ type = "default" }) {

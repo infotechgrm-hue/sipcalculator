@@ -1,5 +1,3 @@
-import Script from "next/script";
-
 export const metadata = {
   title: "Lumpsum Calculator Online (2025)- One-Time Investment Growth",
   description:
@@ -25,7 +23,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.sipcalculator.tech/lumpsum-og.webp",
+        url: "https://www.sipcalculator.tech/og-images/lumpsum-og.webp",
         width: 1200,
         height: 630,
         alt: "Lumpsum Calculator | SIPCalculator.tech",
@@ -37,7 +35,7 @@ export const metadata = {
     title: "Lumpsum Calculator | Grow Your One-Time Investment",
     description:
       "Plan your goals confidently using our Lumpsum Calculator. Calculate future returns and see how your single investment compounds over time.",
-    images: ["https://www.sipcalculator.tech/lumpsum-og.webp"],
+    images: ["https://www.sipcalculator.tech/og-images/lumpsum-og.webp"],
   },
   icons: { icon: "/favicon.ico" },
 };

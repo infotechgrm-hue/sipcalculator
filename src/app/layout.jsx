@@ -24,7 +24,7 @@ export const metadata = {
     url: "https://www.sipcalculator.tech/",
     images: [
       {
-        url: "https://www.sipcalculator.tech/og-image.webp",
+        url: "https://www.sipcalculator.tech/og-images/og-image.webp",
         width: 1200,
         height: 630,
         alt: "SIP Calculator | Best Calculator Online for Mutual Funds",
@@ -36,7 +36,7 @@ export const metadata = {
     title: "SIP Calculator | Best Calculator Online for Mutual Funds",
     description:
       "A SIP calculator is a tool to calculate returns for your SIP investments in mutual funds that helps individuals to plan their investments effectively.",
-    images: ["https://www.sipcalculator.tech/og-image.webp"],
+    images: ["https://www.sipcalculator.tech/og-images/og-image.webp"],
   },
   icons: { icon: "/favicon.ico" },
 };
