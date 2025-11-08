@@ -32,6 +32,24 @@ export default async function sitemap() {
       priority: 1,
     },
     {
+      url: `${baseUrl}/lumpsum-calculator`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/sukanya-samriddhi-yojana-calculator`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/mutual-fund-return-calculator`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
