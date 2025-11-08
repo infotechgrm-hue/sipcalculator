@@ -20,7 +20,7 @@ export default function Home() {
           <div className="flex-1 w-full order-1">
             <SIPCalculator />
           </div>
-          <div className="w-full lg:w-1/5 order-2">
+          <div className="w-full lg:w-1/5 order-2 pt-2 lg:pt-0">
             <PopularCalculators />
           </div>
         </div>
