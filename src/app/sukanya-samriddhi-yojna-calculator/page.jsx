@@ -60,28 +60,33 @@ export default function SSYCalculatorPage() {
       {/* ===== INTRO ===== */}
       <section className="max-w-6xl mx-auto px-4 py-12 text-center md:text-left">
         <h1 className="text-3xl md:text-4xl font-extrabold text-emerald-600 mb-4">
-          Sukanya Samriddhi Yojana (SSY) Calculator – Accurate Compound Interest Projection
+          Sukanya Samriddhi Yojana (SSY) Calculator – Accurate Compound Interest
+          Projection
         </h1>
 
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
-          The <strong>Sukanya Samriddhi Yojana (SSY)</strong> is a Government of India
-          small-savings scheme designed to help parents build a secure, tax-free corpus
-          for their girl child. You can invest as little as <strong>₹250 per year</strong>
-          and up to <strong>₹1.5 lakh per year</strong>, earning one of the highest
-          government-guaranteed interest rates with full <strong>EEE tax exemption</strong>.
+          The <strong>Sukanya Samriddhi Yojana (SSY)</strong> is a Government of
+          India small-savings scheme designed to help parents build a secure,
+          tax-free corpus for their girl child. You can invest as little as{" "}
+          <strong>₹250 per year</strong>
+          and up to <strong>₹1.5 lakh per year</strong>, earning one of the
+          highest government-guaranteed interest rates with full{" "}
+          <strong>EEE tax exemption</strong>.
         </p>
 
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
-          This calculator uses the <strong>compound interest formula</strong>{" "}
-          (<em>A = P(1 + r/n)^(nt)</em>) to estimate how your yearly deposits grow.
-          You can deposit for <strong>15 years</strong>, while your balance continues
-          to compound annually for <strong>21 years</strong> — giving you an accurate
-          projection of maturity value and interest earned.
+          This calculator uses the <strong>compound interest formula</strong> (
+          <em>A = P(1 + r/n)^(nt)</em>) to estimate how your yearly deposits
+          grow. You can deposit for <strong>15 years</strong>, while your
+          balance continues to compound annually for <strong>21 years</strong> —
+          giving you an accurate projection of maturity value and interest
+          earned.
         </p>
 
         <p className="text-base text-gray-600 dark:text-gray-400 italic">
           *Interest rate used: 8.2% p.a. (Q4 FY 2024–25). The actual rate is
-          notified by the government quarterly and may change during your SSY tenure.*
+          notified by the government quarterly and may change during your SSY
+          tenure.*
         </p>
       </section>
 
@@ -94,7 +99,7 @@ export default function SSYCalculatorPage() {
           "Understand how early investment maximizes compounding.",
           "Evaluate the impact of different yearly deposits and start years.",
         ]}
-        img="/images/ssy-calculator.webp"
+        img="/images/sukanya-samriddhi-yojna-calculator.webp"
       />
 
       {/* ===== HOW INTEREST ACCUMULATES ===== */}
@@ -113,8 +118,14 @@ export default function SSYCalculatorPage() {
             { k: "A", v: "Maturity amount (principal + interest)" },
             { k: "P", v: "Yearly principal deposit" },
             { k: "r", v: "Annual interest rate (in decimal)" },
-            { k: "n", v: "Number of compounding intervals per year (1 for yearly)" },
-            { k: "t", v: "Number of years (deposit + post-deposit interest period)" },
+            {
+              k: "n",
+              v: "Number of compounding intervals per year (1 for yearly)",
+            },
+            {
+              k: "t",
+              v: "Number of years (deposit + post-deposit interest period)",
+            },
           ],
         }}
       />
@@ -163,8 +174,8 @@ export default function SSYCalculatorPage() {
           </table>
         </div>
         <p className="text-sm text-gray-500 mt-2 italic">
-          *Calculated using compound interest formula with yearly compounding. Actual
-          maturity depends on quarterly-notified SSY interest rates.*
+          *Calculated using compound interest formula with yearly compounding.
+          Actual maturity depends on quarterly-notified SSY interest rates.*
         </p>
       </section>
 
@@ -216,8 +227,9 @@ export default function SSYCalculatorPage() {
           </table>
         </div>
         <p className="text-sm text-gray-500 mt-2 italic">
-          *SSY can be opened until the girl turns 10 years. Later openings shorten the
-          deposit period but still accrue interest until 21 years from opening.*
+          *SSY can be opened until the girl turns 10 years. Later openings
+          shorten the deposit period but still accrue interest until 21 years
+          from opening.*
         </p>
       </section>
 
@@ -245,7 +257,9 @@ export default function SSYCalculatorPage() {
                 <td className="p-3 border text-center">SSY</td>
                 <td className="p-3 border text-center">8.2% p.a.</td>
                 <td className="p-3 border text-center">₹50,000/year</td>
-                <td className="p-3 border text-center">15 yrs + 6 yrs interest</td>
+                <td className="p-3 border text-center">
+                  15 yrs + 6 yrs interest
+                </td>
                 <td className="p-3 border text-center">EEE (Tax-Free)</td>
                 <td className="p-3 border text-center">≈ ₹16–17 Lakh</td>
               </tr>
@@ -269,8 +283,8 @@ export default function SSYCalculatorPage() {
           </table>
         </div>
         <p className="text-sm text-gray-500 mt-2 italic">
-          *All comparisons use A = P(1 + r/n)^(n×t). SSY offers the highest compounding
-          advantage under the EEE (Exempt-Exempt-Exempt) category.*
+          *All comparisons use A = P(1 + r/n)^(n×t). SSY offers the highest
+          compounding advantage under the EEE (Exempt-Exempt-Exempt) category.*
         </p>
       </section>
 
@@ -289,6 +303,100 @@ export default function SSYCalculatorPage() {
       <Faqs type="ssy" />
 
       <Footer />
+      <script type="application/ld+json">
+        {`
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "Sukanya Samriddhi Yojana (SSY) Calculator",
+  "url": "https://www.sipcalculator.tech/sukanya-samriddhi-yojana-calculator",
+  "image": "https://www.sipcalculator.tech/og-images/ssy-og.webp",
+  "description": "Use the Sukanya Samriddhi Yojana (SSY) Calculator to estimate maturity amount, interest, and tax-free corpus using compound interest A = P(1 + r/n)^(nt). Ideal for planning education or marriage savings for your girl child.",
+  "provider": {
+    "@type": "Organization",
+    "name": "SIP Calculator Tech",
+    "url": "https://www.sipcalculator.tech"
+  },
+  "interestRate": "8.2% p.a.",
+  "category": "Government Small Savings Scheme",
+  "termsOfService": "https://www.sipcalculator.tech/terms",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.sipcalculator.tech/sukanya-samriddhi-yojana-calculator",
+    "price": "0",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock"
+  }
+}
+`}
+      </script>
+
+      <script type="application/ld+json">
+        {`
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Sukanya Samriddhi Yojana (SSY)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SSY is a Government of India savings scheme that helps parents create a tax-free corpus for their girl child’s future education or marriage. It offers one of the highest small-savings interest rates and full EEE tax benefits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is SSY interest calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The SSY Calculator uses the compound interest formula A = P(1 + r/n)^(n×t), where P is your yearly deposit, r is the annual interest rate, n is the compounding frequency, and t is the total number of years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maturity period of SSY?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The SSY account matures 21 years after opening. Deposits can be made for 15 years, and the balance continues earning interest until maturity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I withdraw money before maturity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can withdraw up to 50% of the balance once your girl child turns 18, primarily for education purposes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum and maximum SSY deposit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The minimum deposit is ₹250 per year and the maximum is ₹1.5 lakh per year. Contributions can be made once or multiple times in a financial year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SSY better than PPF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SSY generally offers a higher interest rate than PPF and provides the same EEE tax-free status, making it ideal for girl child future planning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the maturity amount from SSY taxable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The Sukanya Samriddhi Yojana offers full tax exemption under Section 80C — both the interest earned and maturity amount are tax-free."
+      }
+    }
+  ]
+}
+`}
+      </script>
     </main>
   );
 }

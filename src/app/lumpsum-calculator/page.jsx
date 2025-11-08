@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import LumpsumCalculator from "@/components/SIP/LumpsumCalculator";
+import Script from "next/script";
 import PopularCalculators from "@/components/PopularCalculators";
 import EnhancedSection from "@/components/EnhancedSection";
 import Footer from "@/components/Footer";
@@ -237,6 +238,42 @@ export default function Home() {
       {/* ===== FOOTER ===== */}
       <Faqs type="lumpsum" />
       <Footer />
+      <Script
+        id="ld-json-lumpsum-calculator"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FinancialProduct",
+            name: "Lumpsum Calculator",
+            url: "https://www.sipcalculator.tech/lumpsum-calculator",
+            description:
+              "A Lumpsum Calculator helps you estimate how your one-time investment can grow over the years through compounding. By entering your amount, expected return rate, and time period, you can quickly see the potential maturity value.",
+            provider: {
+              "@type": "Organization",
+              name: "SIPCalculator.tech",
+              url: "https://www.sipcalculator.tech",
+              logo: "https://www.sipcalculator.tech/favicon.ico",
+            },
+            category: "Finance",
+            applicationCategory: "FinanceApplication",
+            potentialAction: {
+              "@type": "UseAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate: "https://www.sipcalculator.tech/",
+              },
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "INR",
+              availability: "https://schema.org/InStock",
+            },
+          }),
+        }}
+      />
     </main>
   );
 }

@@ -29,9 +29,7 @@ export const metadata = {
     title: "Mutual Fund Return Calculator | Estimate MF Growth & Performance",
     description:
       "Project your mutual fund growth easily. Calculate expected returns and compare with SIP or lumpsum investment strategies.",
-    images: [
-      "https://www.sipcalculator.tech/og-images/mfr-og.webp",
-    ],
+    images: ["https://www.sipcalculator.tech/og-images/mfr-og.webp"],
   },
 };
 
@@ -263,6 +261,33 @@ export default function MutualFundReturnCalculatorPage() {
 
       <Faqs type="mutualfund" />
       <Footer />
+      <script type="application/ld+json">
+        {`
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "Mutual Fund Return Calculator",
+  "url": "https://www.sipcalculator.tech/mutual-fund-return-calculator",
+  "image": "https://www.sipcalculator.tech/og-images/mfr-og.webp",
+  "description": "Use the Mutual Fund Return Calculator to estimate your investment's future value based on expected returns. Ideal for planning your financial goals.",
+  "provider": {
+    "@type": "Organization",
+    "name": "SIP Calculator Tech",
+    "url": "https://www.sipcalculator.tech"
+  },
+  "interestRate": "8.2% p.a.",
+  "category": "Government Small Savings Scheme",
+  "termsOfService": "https://www.sipcalculator.tech/terms",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.sipcalculator.tech/mutual-fund-return-calculator",
+    "price": "0",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock"
+  }
+}
+`}
+      </script>
     </main>
   );
 }

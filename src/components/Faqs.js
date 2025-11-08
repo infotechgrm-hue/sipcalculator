@@ -88,6 +88,60 @@ const faqData = {
         "While the Mutual Fund Return Calculator doesn’t recommend specific funds, it helps you compare different return scenarios. You can input different expected rates of return based on fund types — equity, debt, or hybrid — to understand how each may perform over your chosen duration.",
     },
   ],
+  ssy: [
+    {
+      question:
+        "What is the Sukanya Samriddhi Yojana (SSY) Calculator and how does it work?",
+      answer:
+        "The Sukanya Samriddhi Yojana (SSY) Calculator is an online tool that helps parents estimate the maturity amount and total interest earned under the government’s SSY scheme. By entering your annual contribution, your girl’s age, and start year, the calculator projects the final maturity value using the compound interest formula A = P(1 + r/n)^(n×t).",
+    },
+    {
+      question: "What is Sukanya Samriddhi Yojana (SSY)?",
+      answer:
+        "SSY is a Government of India-backed small savings scheme designed to help parents build a tax-free corpus for their girl child’s education or marriage. It offers one of the highest interest rates among small savings schemes and provides full EEE (Exempt–Exempt–Exempt) tax benefits.",
+    },
+    {
+      question: "How is the SSY maturity amount calculated?",
+      answer:
+        "The SSY maturity amount is calculated using the compound interest formula A = P(1 + r/n)^(n×t), where P is the yearly deposit, r is the annual interest rate (currently 8.2%), n is the number of compounding intervals (1 for yearly), and t is the total number of years. Deposits are made for 15 years, and the balance continues to earn interest until the 21st year.",
+    },
+    {
+      question: "What is the maturity period of the SSY account?",
+      answer:
+        "The Sukanya Samriddhi Yojana account matures 21 years from the date of opening. You can deposit money for the first 15 years, and the balance continues to earn annual interest until maturity.",
+    },
+    {
+      question: "Can I withdraw money before SSY maturity?",
+      answer:
+        "Yes. Partial withdrawals are allowed after the girl child turns 18 years old, up to 50% of the available balance, primarily for education expenses. Full withdrawal is permitted upon maturity at 21 years.",
+    },
+    {
+      question: "What are the minimum and maximum SSY deposit limits?",
+      answer:
+        "The minimum deposit is ₹250 per year, and the maximum is ₹1.5 lakh per year. Deposits can be made once or multiple times in a financial year through cash, cheque, demand draft, or online transfer.",
+    },
+    {
+      question: "Is the SSY maturity amount completely tax-free?",
+      answer:
+        "Yes. Sukanya Samriddhi Yojana falls under the EEE (Exempt–Exempt–Exempt) category. This means your deposits qualify for deduction under Section 80C, and both the interest earned and the maturity amount are tax-free.",
+    },
+    {
+      question: "Is SSY better than PPF or Bank RD?",
+      answer:
+        "SSY generally offers a higher interest rate than the Public Provident Fund (PPF) and bank recurring deposits. It also provides complete tax exemption, making it one of the best long-term saving options for girl child education or marriage planning.",
+    },
+    {
+      question: "How often does the government revise the SSY interest rate?",
+      answer:
+        "The Government of India reviews and notifies the SSY interest rate every quarter. The calculator assumes a constant rate (currently 8.2%) for projection purposes, but actual maturity may vary slightly depending on official revisions.",
+    },
+    {
+      question:
+        "Can I transfer my SSY account if I move to another city or bank?",
+      answer:
+        "Yes. The SSY account can be easily transferred between post offices and authorized banks anywhere in India by submitting a transfer request along with KYC documents and passbook.",
+    },
+  ],
 };
 
 export default function Faqs({ type = "default" }) {

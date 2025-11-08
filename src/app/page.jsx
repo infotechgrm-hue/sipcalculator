@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import SIPCalculator from "@/components/SIP/SIPCalculator";
 import PopularCalculators from "@/components/PopularCalculators";
+import Script from "next/script";
 import EnhancedSection from "@/components/EnhancedSection";
 import Footer from "@/components/Footer";
 import Faqs from "@/components/Faqs";
@@ -190,6 +191,42 @@ export default function Home() {
       {/* Footer */}
       <Faqs type="sip" />
       <Footer />
+      <Script
+        id="ld-json-sip-calculator"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FinancialProduct",
+            name: "SIP Calculator",
+            url: "https://www.sipcalculator.tech/",
+            description:
+              "An online tool to estimate the future value of your SIP investments in mutual funds. Plan your financial goals for retirement, education, or wealth building. Try our free SIP Calculator now!",
+            provider: {
+              "@type": "Organization",
+              name: "SIPCalculator.tech",
+              url: "https://www.sipcalculator.tech",
+              logo: "https://www.sipcalculator.tech/favicon.ico",
+            },
+            category: "Finance",
+            applicationCategory: "FinanceApplication",
+            potentialAction: {
+              "@type": "UseAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate: "https://www.sipcalculator.tech/",
+              },
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "INR",
+              availability: "https://schema.org/InStock",
+            },
+          }),
+        }}
+      />
     </main>
   );
 }
