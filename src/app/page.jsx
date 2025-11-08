@@ -188,7 +188,7 @@ export default function Home() {
         // img="/images/start-sip.webp"
       />
       {/* Footer */}
-      <Faqs />
+      <Faqs type="sip" />
       <Footer />
     </main>
   );

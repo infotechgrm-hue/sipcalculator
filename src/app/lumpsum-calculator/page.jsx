@@ -33,148 +33,209 @@ export default function Home() {
         </h1>
 
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
-          Investing a single large amount can be a smart way to build wealth if
-          done at the right time and for the right duration. Our{" "}
-          <strong>Lumpsum Calculator</strong> helps you estimate how your
-          one-time investment could grow over the years based on expected
-          returns and tenure.
+          A <strong>Lumpsum Calculator</strong> helps you estimate how your
+          one-time investment can grow over the years through compounding. By
+          entering your amount, expected return rate, and time period, you can
+          quickly see the potential maturity value.
         </p>
 
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
-          Whether you’re planning for retirement, higher education, or long-term
-          goals, this calculator shows the potential corpus your investment can
-          achieve—helping you make confident and data-driven decisions.
+          Whether you’re investing for retirement, your child’s education, or
+          wealth creation, this tool provides accurate projections for smarter
+          planning. It’s ideal for long-term investors who prefer a one-time
+          contribution over regular SIPs.
         </p>
 
         <p className="text-base text-gray-600 dark:text-gray-400 italic">
-          *Note: This calculator provides an estimated value based on assumed
-          returns. Actual performance will vary with market conditions and fund
-          behaviour.*
+          *Note: These are estimated values and may vary depending on market
+          conditions and fund performance.*
         </p>
       </section>
 
       {/* ===== WHY USE CALCULATOR ===== */}
       <EnhancedSection
         title="Why Use a Lumpsum Calculator?"
-        content="A lumpsum calculator takes the guesswork out of investing. It lets you forecast how a one-time contribution can grow over time and compare various return scenarios."
+        content="A lumpsum calculator lets you visualize your future wealth instantly. It helps in planning investments strategically and understanding how compounding impacts your final corpus."
         bullets={[
-          "Estimate your investment’s potential value instantly.",
-          "Experiment with different tenures and expected returns.",
-          "Plan large financial goals with realistic projections.",
+          "See potential growth instantly across different timeframes.",
+          "Compare expected returns for 5, 10, or 15 years.",
+          "Avoid manual compounding math and save time.",
         ]}
-        img="/images/sip-calculator.webp"
+        img="/images/lumpsum-calculator.webp"
       />
 
       {/* ===== HOW COMPOUNDING WORKS ===== */}
       <EnhancedSection
         title="How Compounding Boosts Your Lumpsum Investment"
-        content="Compounding is the core of long-term wealth creation. When your returns start earning their own returns, growth accelerates year after year—especially when you stay invested."
+        content="When you invest a lumpsum amount, the returns generated every year get reinvested. Over time, your investment grows exponentially due to the power of compounding."
         bullets={[
-          "Invest once and let your money grow automatically.",
-          "Longer durations multiply growth through reinvested returns.",
-          "Ideal for investors who can stay invested without withdrawals.",
+          "One-time investment compounds for the full duration.",
+          "Even small differences in rate or time lead to huge changes.",
+          "Start early to maximize your compounding advantage.",
         ]}
         formula={{
           title: "Lumpsum Future Value Formula",
           expression: "FV = P × (1 + r)^n",
           vars: [
-            { k: "FV", v: "Future value of the investment" },
-            { k: "P", v: "Principal or initial amount invested" },
-            { k: "r", v: "Annual rate of return (in decimal form)" },
-            { k: "n", v: "Investment period in years" },
+            { k: "FV", v: "Future value of your investment" },
+            { k: "P", v: "Initial amount invested" },
+            { k: "r", v: "Annual rate of return (decimal form)" },
+            { k: "n", v: "Number of years" },
           ],
         }}
       />
+
+      {/* ===== TABLE: GROWTH EXAMPLES ===== */}
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <h2 className="text-2xl font-bold text-emerald-600 mb-4 text-center md:text-left">
+          Example: How Different Lumpsum Investments Grow
+        </h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border border-gray-200 rounded-lg text-sm md:text-base">
+            <thead className="bg-emerald-100 text-gray-800 font-semibold">
+              <tr>
+                <th className="p-3 border">Investment Amount (₹)</th>
+                <th className="p-3 border">Duration (Years)</th>
+                <th className="p-3 border">Expected Return (p.a.)</th>
+                <th className="p-3 border">Estimated Future Value (₹)</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-700">
+              <tr>
+                <td className="p-3 border text-center">1,00,000</td>
+                <td className="p-3 border text-center">5</td>
+                <td className="p-3 border text-center">10%</td>
+                <td className="p-3 border text-center">1,61,000</td>
+              </tr>
+              <tr>
+                <td className="p-3 border text-center">2,00,000</td>
+                <td className="p-3 border text-center">10</td>
+                <td className="p-3 border text-center">12%</td>
+                <td className="p-3 border text-center">6,21,000</td>
+              </tr>
+              <tr>
+                <td className="p-3 border text-center">5,00,000</td>
+                <td className="p-3 border text-center">15</td>
+                <td className="p-3 border text-center">11%</td>
+                <td className="p-3 border text-center">23,20,000</td>
+              </tr>
+              <tr>
+                <td className="p-3 border text-center">10,00,000</td>
+                <td className="p-3 border text-center">20</td>
+                <td className="p-3 border text-center">10%</td>
+                <td className="p-3 border text-center">67,27,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mt-2 italic">
+          *These figures are illustrative and for educational purposes only.*
+        </p>
+      </section>
 
       <AddSlot slot="2234567891" />
 
-      {/* ===== INVESTMENT BREAKDOWN ===== */}
-      <EnhancedSection
-        title="Investment Breakdown"
-        content="See how your one-time investment divides between the amount you put in and the returns generated through compounding."
-        chart={{
-          type: "pie",
-          title: "Invested vs Returns",
-          data: [
-            { label: "Est. Returns", value: 1210000 },
-            { label: "Invested Amount", value: 1000000 },
-          ],
-          colors: ["#2563EB", "#10B981"],
-        }}
-      />
+      {/* ===== REAL-LIFE SCENARIOS ===== */}
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <h2 className="text-2xl font-bold text-emerald-600 mb-4 text-center md:text-left">
+          Real-Life Lumpsum Investment Scenarios
+        </h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border border-gray-200 rounded-lg text-sm md:text-base">
+            <thead className="bg-emerald-100 text-gray-800 font-semibold">
+              <tr>
+                <th className="p-3 border">Investor</th>
+                <th className="p-3 border">Goal</th>
+                <th className="p-3 border">Amount (₹)</th>
+                <th className="p-3 border">Duration</th>
+                <th className="p-3 border">Est. Value (12%)</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-700">
+              <tr>
+                <td className="p-3 border text-center">Ravi (Age 30)</td>
+                <td className="p-3 border text-center">Retirement</td>
+                <td className="p-3 border text-center">5,00,000</td>
+                <td className="p-3 border text-center">25 Years</td>
+                <td className="p-3 border text-center">83,95,000</td>
+              </tr>
+              <tr>
+                <td className="p-3 border text-center">Priya (Age 28)</td>
+                <td className="p-3 border text-center">Child’s Education</td>
+                <td className="p-3 border text-center">3,00,000</td>
+                <td className="p-3 border text-center">18 Years</td>
+                <td className="p-3 border text-center">19,20,000</td>
+              </tr>
+              <tr>
+                <td className="p-3 border text-center">Amit (Age 35)</td>
+                <td className="p-3 border text-center">Wealth Building</td>
+                <td className="p-3 border text-center">10,00,000</td>
+                <td className="p-3 border text-center">20 Years</td>
+                <td className="p-3 border text-center">96,46,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mt-2 italic">
+          *Based on historical mutual fund returns. Actual results will vary.*
+        </p>
+      </section>
 
       <AddSlot slot="2234567892" />
 
-      {/* ===== HOW RETURNS ARE CALCULATED ===== */}
-      <EnhancedSection
-        title="How Are Lumpsum Returns Calculated?"
-        content="The calculator applies the compound-interest formula to estimate your final corpus. Since the entire amount compounds from day one, even small differences in rate or duration can change the outcome dramatically."
-        formula={{
-          title: "Lumpsum Return Formula",
-          expression: "FV = P × (1 + r)^n",
-          vars: [
-            { k: "FV", v: "Future value of your investment" },
-            { k: "P", v: "Initial principal amount" },
-            { k: "r", v: "Annual rate of return" },
-            { k: "n", v: "Number of years invested" },
-          ],
-        }}
-      />
-
-      <AddSlot slot="2234567895" />
-
-      {/* ===== BENEFITS ===== */}
-      <EnhancedSection
-        title="Benefits of a Lumpsum Investment"
-        content="A lumpsum approach can be a powerful strategy for those with available capital seeking long-term growth. It’s straightforward, disciplined, and highly effective when paired with the right fund choice."
-        bullets={[
-          "Compounding begins immediately on the full amount.",
-          "No monthly tracking—invest once and monitor progress.",
-          "Ideal for long-term goals such as retirement or education.",
-        ]}
-      />
-
-      <AddSlot slot="2234567896" />
-
-      {/* ===== LUMPSUM VS SIP ===== */}
-      <EnhancedSection
-        title="Lumpsum vs SIP – Which Should You Choose?"
-        content="Both methods help investors achieve financial goals but work differently. SIPs suit regular income earners, while lumpsum investing benefits those with a surplus amount ready to invest."
-        bullets={[
-          "SIPs average out market volatility through gradual investing.",
-          "Lumpsum investments earn full-scale compounding from day one.",
-          "Your choice depends on cash flow, risk tolerance, and goals.",
-        ]}
-      />
-
-      <AddSlot slot="2234567897" />
-
-      {/* ===== TIPS ===== */}
-      <EnhancedSection
-        title="Smart Tips for Lumpsum Investors"
-        content="Maximize returns and minimize risk by following simple principles used by seasoned investors."
-        bullets={[
-          "Invest during stable or undervalued market phases.",
-          "Diversify across asset classes to balance growth and safety.",
-          "Review your portfolio annually to stay aligned with goals.",
-        ]}
-      />
-
-      <AddSlot slot="2234567898" />
+      {/* ===== LUMPSUM VS SIP COMPARISON ===== */}
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <h2 className="text-2xl font-bold text-emerald-600 mb-4 text-center md:text-left">
+          Lumpsum vs SIP: Return Comparison Example
+        </h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border border-gray-200 rounded-lg text-sm md:text-base">
+            <thead className="bg-emerald-100 text-gray-800 font-semibold">
+              <tr>
+                <th className="p-3 border">Investment Type</th>
+                <th className="p-3 border">Amount</th>
+                <th className="p-3 border">Duration</th>
+                <th className="p-3 border">Return (p.a.)</th>
+                <th className="p-3 border">Future Value (₹)</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-700">
+              <tr>
+                <td className="p-3 border text-center">Lumpsum</td>
+                <td className="p-3 border text-center">5,00,000 (once)</td>
+                <td className="p-3 border text-center">10 Years</td>
+                <td className="p-3 border text-center">12%</td>
+                <td className="p-3 border text-center">15,52,000</td>
+              </tr>
+              <tr>
+                <td className="p-3 border text-center">SIP</td>
+                <td className="p-3 border text-center">5,000/month</td>
+                <td className="p-3 border text-center">10 Years</td>
+                <td className="p-3 border text-center">12%</td>
+                <td className="p-3 border text-center">11,61,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mt-2 italic">
+          *SIP provides cost-averaging benefits, while Lumpsum grows faster if
+          invested early.*
+        </p>
+      </section>
 
       {/* ===== CONCLUSION ===== */}
       <EnhancedSection
         title="Plan Your Lumpsum Investment Today"
-        content="Use this Lumpsum Calculator to see how a single decision today can grow into meaningful wealth tomorrow. With clarity on potential outcomes, you can invest confidently and stay focused on long-term success."
+        content="Use this Lumpsum Calculator to forecast your future corpus, make informed financial decisions, and let time and compounding grow your wealth naturally."
         bullets={[
-          "Set a clear financial goal and investment horizon.",
-          "Use data-backed projections for better planning.",
-          "Stay patient—time and compounding will do the rest.",
+          "Define your financial goal and timeline.",
+          "Experiment with different rates and tenures.",
+          "Invest early, stay invested, and track growth yearly.",
         ]}
       />
 
       {/* ===== FOOTER ===== */}
-      <Faqs />
+      <Faqs type="lumpsum" />
       <Footer />
     </main>
   );

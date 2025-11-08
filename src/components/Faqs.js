@@ -1,62 +1,68 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-const faqs = [
-  {
-    question: "What is an SIP Calculator and how does it work?",
-    answer:
-      "An SIP Calculator is a financial tool that helps you estimate the future value of your investments made through a Systematic Investment Plan. By entering your monthly contribution, expected rate of return, and investment duration, it instantly calculates your potential maturity amount — helping you plan smarter and invest with confidence.",
-  },
-  {
-    question: "Is an SIP better than a lump sum investment?",
-    answer:
-      "Both have their advantages. SIPs are ideal for investors who prefer disciplined, gradual investing and want to average out market volatility. Lump sum investments, on the other hand, work well when you have a large amount available upfront and want to capitalize on long-term growth opportunities. The SIP calculator helps you compare both methods and choose what fits your goals best.",
-  },
-  {
-    question: "How accurate are SIP calculator results?",
-    answer:
-      "The results from an SIP calculator are based on projected returns and serve as estimates. Real returns may vary depending on market performance, fund type, and duration. Still, the calculator provides a reliable framework for understanding how your money can grow through consistent investing.",
-  },
-  {
-    question: "Can I calculate SIP for my target amount?",
-    answer:
-      "Yes, most SIP calculators, including ours, allow you to reverse-calculate your monthly investment. Just enter your target corpus, desired time frame, and expected annual return — the calculator will tell you how much you should invest each month to reach that goal.",
-  },
-  {
-    question: "What are the benefits of investing through SIP?",
-    answer:
-      "SIPs encourage disciplined investing, reduce the stress of timing the market, and leverage the power of compounding. They allow you to start small, stay consistent, and gradually build significant wealth over time — making them ideal for both beginners and experienced investors.",
-  },
-  {
-    question: "Do SIPs offer guaranteed returns?",
-    answer:
-      "No, SIP returns are market-linked since they invest in mutual funds. However, by investing regularly and staying invested for the long term, you can smooth out short-term volatility and improve your chances of achieving stable, inflation-beating returns.",
-  },
-  {
-    question: "How frequently can I invest through SIP?",
-    answer:
-      "You can set up SIPs on a monthly, quarterly, or even weekly basis depending on the fund provider. Most investors prefer monthly SIPs as they align well with their income cycle and make financial planning easier.",
-  },
-  {
-    question: "Can I modify or stop my SIP anytime?",
-    answer:
-      "Yes, SIPs are flexible. You can increase, decrease, pause, or even stop your SIP at any time without penalties. However, staying consistent gives you the full benefit of compounding and rupee-cost averaging over the long run.",
-  },
-];
+const faqData = {
+  sip: [
+    {
+      question: "What is an SIP Calculator and how does it work?",
+      answer:
+        "An SIP Calculator helps you estimate the future value of your mutual fund investments made through a Systematic Investment Plan. You just enter your monthly investment, expected annual return, and investment period to see how your wealth can grow over time.",
+    },
+    {
+      question: "Is SIP better than a lump sum investment?",
+      answer:
+        "SIPs offer disciplined, periodic investing that smooths out market volatility through rupee-cost averaging. Lump sum investments are better for investors who have a large amount available at once. Both strategies can be effective depending on your goals and market timing.",
+    },
+    {
+      question: "Can I modify or pause my SIP anytime?",
+      answer:
+        "Yes. You can increase, reduce, pause, or stop your SIP investment without penalties. However, consistent investing over the long term gives the best compounding results.",
+    },
+  ],
+  lumpsum: [
+    {
+      question: "What is a Lumpsum Calculator?",
+      answer:
+        "A Lumpsum Calculator estimates how a one-time investment can grow over time. By entering your investment amount, expected annual return, and duration, it projects the future value of your investment through compounding.",
+    },
+    {
+      question: "How does a Lumpsum Calculator differ from an SIP Calculator?",
+      answer:
+        "While an SIP Calculator estimates periodic monthly investments, a Lumpsum Calculator focuses on a single, one-time investment. It helps you understand how compounding works when you invest a larger amount upfront.",
+    },
+    {
+      question: "Can I use the Lumpsum Calculator for goal-based planning?",
+      answer:
+        "Yes! You can use it to calculate how much you need to invest today to achieve a specific goal — like retirement or buying a house — based on your expected return and time horizon.",
+    },
+    {
+      question: "Does the Lumpsum Calculator account for inflation?",
+      answer:
+        "No, this calculator shows nominal returns. For real purchasing power, consider factoring in an average inflation rate manually to get a more realistic future value.",
+    },
+  ],
+  default: [
+    {
+      question: "What is a Financial Calculator?",
+      answer:
+        "A financial calculator helps estimate investment returns, EMIs, or savings growth using mathematical formulas. It provides clarity and aids better financial planning.",
+    },
+  ],
+};
 
-export default function Faqs() {
+export default function Faqs({ type = "default" }) {
   const [openIndex, setOpenIndex] = useState(null);
+  const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  // ✅ Select FAQs dynamically based on prop
+  const selectedFaqs = faqData[type] || faqData.default;
 
-  // ✅ Step 2: Generate FAQ schema dynamically
+  // ✅ Generate structured data for SEO
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
+    mainEntity: selectedFaqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -73,14 +79,14 @@ export default function Faqs() {
           Frequently Asked Questions
         </h2>
 
-        {/* ✅ Inject FAQ Schema into <head> */}
+        {/* ✅ Inject JSON-LD Schema for SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
 
         <div className="space-y-5">
-          {faqs.map((faq, index) => {
+          {selectedFaqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <div

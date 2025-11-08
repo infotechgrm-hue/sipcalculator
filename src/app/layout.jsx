@@ -5,14 +5,15 @@ import keywords from "./keywords.json";
 import { Analytics } from "@vercel/analytics/next";
 import { Inter } from "next/font/google";
 
-
 const inter = Inter({ subsets: ["latin"] });
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = {
-  title:
-    "SIP Calculator | Best Calculator Online for Mutual Funds",
+  title: "SIP Calculator | Best Calculator Online for Mutual Funds",
   description:
     "A SIP calculator is a tool to calculate returns for your SIP investments in mutual funds that helps individuals to plan their investments effectively. This will help us to estimate the future value of your SIP investments based on various parameters like monthly investment amount, expected rate of return, and investment duration.",
   keywords: keywords,
@@ -43,7 +44,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${inter.className}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.className}`}
+      >
         {children}
         <Analytics />
 
@@ -68,6 +71,43 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-7433238339097067"
           crossOrigin="anonymous"
+        />
+
+        <Script
+          id="ld-json-sip-calculator"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FinancialProduct",
+              name: "SIP Calculator",
+              url: "https://www.sipcalculator.tech/",
+              description:
+                "An online tool to estimate the future value of your SIP investments in mutual funds. Plan your financial goals for retirement, education, or wealth building. Try our free SIP Calculator now!",
+              provider: {
+                "@type": "Organization",
+                name: "SIPCalculator.tech",
+                url: "https://www.sipcalculator.tech",
+                logo: "https://www.sipcalculator.tech/favicon.ico",
+              },
+              category: "Finance",
+              applicationCategory: "FinanceApplication",
+              potentialAction: {
+                "@type": "UseAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://www.sipcalculator.tech/",
+                },
+              },
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "INR",
+                availability: "https://schema.org/InStock",
+              },
+            }),
+          }}
         />
 
         {/* ✅ GTM noscript fallback */}

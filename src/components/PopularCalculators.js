@@ -4,9 +4,15 @@ import Link from "next/link";
 const popular = [
   { label: "SIP Calculator", href: "/" },
   { label: "Lumpsum Calculator", href: "/lumpsum-calculator" },
+  { label: "Mutual Fund Return Calculator", href: "/mutual-fund-return-calculator" },
+  { label: "Sukanya Samriddhi Yojna Calculator", href: "/sukanya-samriddhi-yojna-calculator" },
   { label: "SWP Calculator", href: "/swp-calculator" },
-  // { label: "FD Calculator", href: "/fd-calculator" },
-  // add more here…
+  { label: "FD Calculator", href: "/fd-calculator" },
+  { label: "RD Calculator", href: "/rd-calculator" },
+  { label: "EMI Calculator", href: "/emi-calculator" },
+  
+  // { label: "Retirement Calculator", href: "/retirement-calculator" },
+  // { label: "Goal Calculator", href: "/goal-calculator" },
 ];
 
 export default function PopularCalculatorsSidebar() {
