@@ -7,11 +7,27 @@ import Footer from "@/components/Footer";
 import Faqs from "@/components/Faqs";
 import AddSlot from "@/components/AddSlot";
 import SukanyaSamriddhiCalculator from "@/components/SSY/SukanyaSamriddhiCalculator";
+import { Key } from "lucide-react";
 
 export const metadata = {
   title: "Sukanya Samriddhi Yojana (SSY) Calculator Online (2025)",
   description:
     "Use the Sukanya Samriddhi Yojana (SSY) Calculator to estimate maturity value, compound interest, and tax-free benefits. Plan deposits for 15 years and project the corpus your girl child will receive at 21 years.",
+  keywords: [
+    "ssy calculator",
+    "ssy calculator online",
+    "sukanya samriddhi calculator",
+    "sukanya samriddhi yojana calculator",
+    "sukanya samriddhi yojana premium chart",
+    "sukanya samridhi yojna chart",
+    "sukanya yojana ka calculator",
+    "sukanya yojna calculate",
+    "sukanya yojna calculator",
+    "sukanya yojna chart",
+    "sukanya yojna interest",
+    "sukanya yojna interest rate",
+    "suknya yojna calculator",
+  ],
   openGraph: {
     title: "Sukanya Samriddhi Yojana (SSY) Calculator Online (2025)",
     description:
